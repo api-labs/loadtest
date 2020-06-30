@@ -1,0 +1,11 @@
+---
+
+concurrency: 50 
+base: 'http://lab-service.kubernetes.env'
+iterations: 1000
+
+plan:
+  - name: homepage
+    request:
+      url: /echo?id=1&payload=test&time_sent=0&sleep_intv=0
+
